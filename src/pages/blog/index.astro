@@ -1,0 +1,11 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+const allPosts = await Astro.glob("./*.md");
+console.log(allPosts);
+---
+
+<MainLayout title="Welcome to Astro.">
+  <div>
+    {allPosts.map((post) => <p> {post.frontmatter.title} </p>)}
+  </div>
+</MainLayout>
