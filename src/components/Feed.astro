@@ -1,0 +1,7 @@
+---
+const allPosts = await Astro.glob("../pages/blog/*.md");
+---
+
+<section>
+  {allPosts.map((post) => <FeedPost post={post} />)}
+</section>

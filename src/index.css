@@ -1,0 +1,48 @@
+@import url("./components/navbar.css");
+@import url("./components/hero.css");
+@font-face {
+  font-family: "Mona Sans";
+  src: url("./assets/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("./assets/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+html {
+  font-family: "Mona Sans";
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: red;
+}
+
+.navbar {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+}
+.navbar a span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar .logo {
+  padding: 0 20px;
+}
+
+.links-nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+}
